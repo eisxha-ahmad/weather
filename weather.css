@@ -84,7 +84,17 @@ body{
 #searchBtn:hover{
     background-color: gainsboro;
 }
-@media (max-width: 600px){
+.weather{
+    display: none;
+}
+.error{
+    display: none;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+}
+/* @media (max-width: 600px){
     .card{
         max-width: 500px;
     }
@@ -104,4 +114,4 @@ body{
         font-size: 10px;
 
     }
-}
+} */

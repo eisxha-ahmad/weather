@@ -8,7 +8,13 @@ async function checkweather(city) {
     const response = await fetch (apiURL + city + `&appid=${apiKey}`);
     var data = await response.json();
 
-    document.getElementById("city").innerHTML = data.name;
+    if(response.status == 404){
+        document.querySelector(".weather").style.display = 'none';
+    document.querySelector(".error").style.display = 'block';
+        
+    }
+    else{
+        document.getElementById("city").innerHTML = data.name;
     document.getElementById("temp").innerHTML = Math.round(data.main.temp) +`°C`;
     document.getElementById("humidity-percent").innerHTML = data.main.humidity + `%`;
     document.getElementById("windSpeed").innerHTML= data.wind.speed +`km/h`;
@@ -20,7 +26,7 @@ async function checkweather(city) {
         weatherImg.src = "weatherImages/clear (2).png"
 
     }
-    else if(data.weather[0].main == 'drizzle') {
+    else if(data.weather[0].main == 'Drizzle') {
         weatherImg.src = "weatherImages/drizzle.png"
 
     }
@@ -36,7 +42,14 @@ async function checkweather(city) {
         weatherImg.src = "weatherImages/snow.png"
 
     }
+    document.querySelector(".weather").style.display = 'block';
+    document.querySelector(".error").style.display = 'none';
 
+
+    }
+
+
+    
     
 }
 search.addEventListener('click', ()=>{
