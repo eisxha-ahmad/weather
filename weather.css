@@ -7,3 +7,80 @@
 body{
     background-color: #222;
 }
+.card{
+    max-width: 490px;
+    background: linear-gradient(135deg, #00feba,#5b5481);
+    color: white;
+    padding: 35px 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 60px auto 26px;
+}
+#searchbox{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+}
+#humidity{
+    width: 90px;
+    height: 75px;
+    margin-top: 14px;
+   
+
+}
+.weBall{
+    position: relative;
+    left: -22px;
+}
+.hawa{
+    width: 160px;
+    position: relative;
+    left: -2px;
+    font-size: 18px;
+   
+}
+.weBall2{
+    position: relative;
+    left: 15px;
+    top: 7px;
+    width: 200px;
+
+}
+#hawa2{
+
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -12px;
+   
+}
+.habs{
+   
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 11px;
+    margin-right: 22px;
+    position: relative;
+    left: 0px;
+    font-size: 18px;
+
+}
+#mausam{
+    margin-top: 80px;
+    width: 150px;
+    height: 150px;
+}
+#searchBtn{
+    width: 12%;
+    height:40px ;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-left: 3px;
+}
+#searchBtn:hover{
+    background-color: gainsboro;
+}
